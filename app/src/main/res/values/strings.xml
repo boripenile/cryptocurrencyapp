@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CryptoCurrency Converter</string>
+    <string name="converter_home">Converter</string>
+    <string name="country_currencies_title">Currencies</string>
+    <string name="convert_from_label">Summary</string>
+    <string name="bitcoin_label">BitCoin</string>
+    <string name="ethereum_label">Ethereum</string>
+    <string name="currency_code">com.youngprime.cryptocurrency.currencyCode</string>
+    <string name="currency_name">com.youngprime.cryptocurrency.currencyName</string>
+    <string name="currency_symbol">com.youngprime.cryptocurrency.currencySymbol</string>
+    <string name="currency_value">com.youngprime.cryptocurrency.currencyValue</string>
+    <string name="coin_symbol">com.youngprime.cryptocurrency.coinSymbol</string>
+    <string name="coin_value">com.youngprime.cryptocurrency.coinValue</string>
+    <string name="coin_name">com.youngprime.cryptocurrency.coinName</string>
+    <string name="convert">Convert</string>
+    <string name="discard">Discard</string>
+</resources>

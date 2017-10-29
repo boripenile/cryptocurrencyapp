@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/currenciesLayoutParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/currenciesLayoutTop"
+            android:layout_alignParentTop="true">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_nav_grey_bottom"
+                    android:id="@+id/toolBarTop">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <ImageButton
+                            android:id="@+id/imageBack"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="80"
+                            android:scaleType="fitStart"
+                            android:background="@color/colorWhite"
+                            android:padding="9dp"
+                            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="Currencies"
+                            android:textStyle="bold"
+                            android:typeface="monospace"
+                            android:textSize="20sp"
+                            android:textAlignment="textStart"
+                            android:layout_weight="20"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/conversionLayoutMiddle"
+            android:layout_below="@id/currenciesLayoutTop">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/currencyListView">
+
+            </ListView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

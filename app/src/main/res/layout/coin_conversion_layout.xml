@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRefresh">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/conversionLayoutParent"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/conversionLayoutTop"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_nav_grey_bottom"
+                        android:id="@+id/toolBarTop"
+                        android:weightSum="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            android:layout_weight="0.78">
+
+                            <ImageButton
+                                android:id="@+id/imageBack"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_weight="80"
+                                android:scaleType="fitStart"
+                                android:background="@color/colorWhite"
+                                android:padding="9dp"
+                                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:text="Conversion"
+                                android:textStyle="bold"
+                                android:typeface="monospace"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:textAlignment="textStart"
+                                android:layout_weight="20"
+                                />
+                        </LinearLayout>
+
+                    </android.support.v7.widget.Toolbar>
+
+                </android.support.design.widget.AppBarLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/conversionLayoutMiddle"
+                android:layout_below="@id/conversionLayoutTop">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+                        <TextView
+                            android:id="@+id/txtConversionSummary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Summary"
+                            android:textStyle="bold"
+                            android:typeface="monospace"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textSize="20sp"/>
+                        <Button
+                            android:id="@+id/btnCoinCurrency"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="32sp"
+                            android:textSize="30sp"
+                            android:typeface="monospace"
+                            android:text="BTC"
+                            android:background="@drawable/btn_coin_border"
+                            android:textAlignment="textStart"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:shadowColor="@color/colorWhite"
+                            android:drawableRight="@drawable/ic_select_currency"
+                            />
+                        <Button
+                            android:id="@+id/editValueCoin"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="20"
+                            android:textAlignment="textStart"
+                            android:textStyle="bold"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:typeface="monospace"
+                            android:text="1"
+                            android:textSize="20sp"
+                            android:background="@drawable/btn_coin_set"
+                            android:drawableRight="@drawable/ic_set_coin"/>
+
+                        <Button
+                            android:id="@+id/btnCurrency"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="32sp"
+                            android:textSize="30sp"
+                            android:typeface="monospace"
+                            android:text="NGN"
+                            android:background="@drawable/btn_currency_border"
+                            android:textAlignment="textStart"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:shadowColor="@color/colorWhite"
+                            android:drawableRight="@drawable/ic_select_currency"
+                            />
+
+                        <Button
+                            android:id="@+id/editValueCurrency"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="20"
+                            android:textAlignment="textStart"
+                            android:textStyle="bold"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="30dp"
+                            android:typeface="monospace"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:background="@drawable/btn_coin_set"
+                            android:drawableRight="@drawable/ic_set_coin"/>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
